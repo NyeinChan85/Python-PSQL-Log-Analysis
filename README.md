@@ -29,21 +29,21 @@ You must be familiar with the following before starting the project:
 ## How to run the project
 -------------------------
 
-1.	Change the directory to vagrant
+1.	Change the directory to **vagrant**
 2.	Launch the virtual machine by following command
-    $ vagrant up
+    **$ vagrant up**
 3.  Log into vitural machine by this command
-	$ vagrant ssh
-4.	Change the directory to /vagrant
+	**$ vagrant ssh**
+4.	Change the directory to **/vagrant**
 5.	run the following command to load the data in local database
-    psql -d news -f newsdata.sql
-6.  Use this command to see the database-> psql -d news 
+    **psql -d news -f newsdata.sql**
+6.  Use this command to see the database-> **psql -d news**
 7.  Database contains 3 tables (authors, articles, and log) and to explore 
     each one, use the following commands:
-    \dt (note: that will display a list of tables that the database contains)
-    \d table (note: replace table with actual table name)
+    **\dt** (note: that will display a list of tables that the database contains)
+    **\d table**(note: replace table with actual table name)
 8.  Use the below command to run the program
-    python log.py
+    **python log.py**
 
 ## Creating the view
 ---------------------
