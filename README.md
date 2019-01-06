@@ -1,15 +1,14 @@
-LOG ANALYSIS
-____________
-
-Description of the project
-__________________________
+# LOG ANALYSIS
+--------------
+## Description of the project
+-----------------------------
 
 This project a part of Udacity Fullstack developer Nano Degree. 
 This project is designed to provide a great SQL skills practice expereince by building a SQL reporting tool interacting with a database with over a million rows, both from the command line and from the code itself. Python programming language (python3) and postgresql are used for this particular project. 
 
 
-Prerequisites
-_____________
+## Prerequisites
+----------------
 
 You must be familiar with the following before starting the project:
 
@@ -18,8 +17,8 @@ You must be familiar with the following before starting the project:
 *	Vagagrant
 *	VirtualBox
 
-How to start setting up the Project
------------------------------------
+## How to start setting up the Project
+---------------------------------------
 
 1.	Install Python3
 2.	Install and Configure Vagrant and VirtualBox 
@@ -27,8 +26,8 @@ How to start setting up the Project
     https://github.com/udacity/fullstack-nanodegree-vm
 4.	Download and install newsdata.sql in our vagrant directory
 
-How to run the project
-______________________
+## How to run the project
+-------------------------
 
 1.	Change the directory to vagrant
 2.	Launch the virtual machine by following command
@@ -46,13 +45,13 @@ ______________________
 8.  Use the below command to run the program
     python log.py
 
-Creating the view
------------------
+## Creating the view
+---------------------
 
 A view, a virtual table based on the result-set of a postgre sql statement, is created for this project.
 Create the view as follows.
 
-Create view popular_articles_view as select title, count(*) as views from articles join log on log.path=CONCAT('/article/',articles.slug) group by articles.author, articles.title order by views DESC;
+* Create view popular_articles_view as select title, count(*) as views from articles join log on log.path=CONCAT('/article/',articles.slug) group by articles.author, articles.title order by views DESC; *
 
 
 
