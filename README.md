@@ -43,7 +43,7 @@ You must be familiar with the following before starting the project:
     **\dt** (note: that will display a list of tables that the database contains)
     **\d table**(note: replace table with actual table name)
 8.  Use the below command to run the program
-    **python log.py**
+    **python logs.py**
 
 ## Creating the view
 ---------------------
