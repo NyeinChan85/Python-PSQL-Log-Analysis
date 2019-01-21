@@ -51,7 +51,7 @@ You must be familiar with the following before starting the project:
 A view, a virtual table based on the result-set of a postgre sql statement, is created for this project.
 Create the view as follows.
 
-_Create view popular_articles_view as select title, count(*) as views from articles join log on log.path=CONCAT('/article/',articles.slug) group by articles.author, articles.title order by views DESC;_
+_Create view popular_articles_view as select title, author, count(*) as views from articles join log on log.path=CONCAT('/article/',articles.slug) group by articles.author, articles.title order by views DESC;_
 
 
 
